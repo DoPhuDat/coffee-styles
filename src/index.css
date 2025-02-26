@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@utility bg-light-coffee {
+  background-color: #c89f94;
+}
+
+/* prefix cf meaning coffee */
+
+.cf-top-menu-item {
+  @apply cursor-pointer py-1 hover:text-gray-800 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:bg-red-500 after:h-0.5 hover:after:w-full after:transition-all after:ease-in-out after:duration-300 after:content-[''];
+}
+
+.cf-icon {
+  @apply w-5 h-5 inline-block;
+}
+
+.cf-badge-circle {
+  @apply text-xs text-center rounded-full px-1.5 p-1;
+}
