@@ -3,16 +3,21 @@
 
 @theme {
   --font-karla: "Karla", sans-serif;
+  --url-img: url("/src/assets/img/bg-img.jpg");
 }
 
 @utility bg-light-coffee {
   background-color: #c89f94;
 }
 
+@utility bg-img {
+  background-image: #c89f94;
+}
+
 /* prefix cf meaning coffee */
 
 .cf-topmenu-expend {
-  @apply absolute top-10 z-50 w-4/5 bg-white text-center left-1/2 -translate-x-1/2 animate-in slide-in-from-top duration-700 rounded;
+  @apply absolute top-20 z-50 w-4/5 bg-white text-center left-1/2 -translate-x-1/2 animate-in slide-in-from-top duration-700 rounded drop-shadow-lg;
 }
 
 .cf-top-menu-item {
@@ -32,3 +37,10 @@
 }
 
 @plugin 'tailwindcss-animate';
+
+.bg-img {
+  background-image: var(--url-img);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
