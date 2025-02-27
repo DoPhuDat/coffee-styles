@@ -4,6 +4,7 @@
 @theme {
   --font-karla: "Karla", sans-serif;
   --url-img: url("/src/assets/img/bg-img.jpg");
+  --color-light-coffee: #c89f94;
 }
 
 @utility bg-light-coffee {
@@ -43,4 +44,16 @@
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.cf-subheadline {
+  @apply flex justify-center items-center mb-96;
+}
+
+.subheadlinr-deco-line {
+  @apply w-8 h-px bg-gray-200;
+}
+
+.subheadlinr-label {
+  @apply uppercase mx-4 tracking-widest text-gray-500 font-bold text-[12px] text-center;
 }
