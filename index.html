@@ -10,9 +10,9 @@
   <body>
     <div id="root">
       <div
-        class="content-wrapper font-karla max-w-screen-xl text-base mx-auto bg-white max-md:mx-8"
+        class="content-wrapper font-karla max-w-screen-xl text-base mx-auto bg-white"
       >
-        <header class="py-6 mx-auto lg:p-1">
+        <header class="py-6 mx-auto lg:p-1 max-md:mx-8">
           <nav class="flex flex-row justify-between items-center relative py-5">
             <div
               class="logo max-md:basis-4/7 basis-2/7 text-center text-2xl font-semibold cursor-poiter max-sm:px-3"
@@ -144,7 +144,70 @@
             <div class="subheadlinr-label">Featured Mugs</div>
             <div class="subheadlinr-deco-line"></div>
           </div>
-          <div class="featured-mugs">a</div>
+          <div class="featured-mugs w-[95%] lg:w-[65%] mx-auto mb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4">
+              <div class="cf-product-card">
+                <div
+                  class="slider h-[440px] sm:h-[540px] bg-[url(/src/assets/img/featured_mugs-1.jpg)] bg-cover bg-center relative group"
+                >
+                  <a href="#" class="block relative w-full h-full">
+                    <div
+                      class="absolute inset-0 bg-gray-900 opacity-0 transition-all duration-500 ease-in-out hover:opacity-50"
+                    ></div>
+
+                    <div
+                      class="absolute top-7/8 left-1/2 -translate-x-1/2 uppercase cursor-pointer w-[90%] text-center py-3 bg-white text-gray-900 rounded hover:opacity-85 hidden group-hover:block animate-in fade-in slide-in-from-bottom duration-400"
+                    >
+                      Explore mugs
+                    </div>
+                  </a>
+                </div>
+                <div class="text-center mt-8">
+                  <a href="">
+                    <div class="text-xl mb-3 hover:text-light-coffee">
+                      Pink Premium Ceramic
+                    </div>
+                  </a>
+                  <div class="cf-price">
+                    <span class="ml-2 text-gray-400">$ 99.00 USD</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cf-product-card">
+                <div
+                  class="slider h-[540px] bg-[url(/src/assets/img/featured_mugs-2.jpg)] bg-cover bg-center relative group"
+                >
+                  <a href="#" class="block relative w-full h-full">
+                    <div
+                      class="absolute inset-0 bg-gray-900 opacity-0 transition-all duration-500 ease-in-out hover:opacity-50"
+                    ></div>
+
+                    <div class="absolute btn">On Sale.</div>
+
+                    <div
+                      class="absolute top-7/8 left-1/2 -translate-x-1/2 uppercase cursor-pointer w-[90%] text-center py-3 bg-white text-gray-900 rounded hover:opacity-85 hidden group-hover:block animate-in fade-in slide-in-from-bottom duration-400"
+                    >
+                      Explore mugs
+                    </div>
+                  </a>
+                </div>
+                <div class="text-center mt-8">
+                  <a href="">
+                    <div class="text-xl mb-3 hover:text-light-coffee">
+                      Pink Premium Ceramic
+                    </div>
+                  </a>
+                  <div class="cf-price">
+                    <span class="text-lg text-red-600">$50.00</span>
+                    <span class="ml-2 text-gray-400 line-through"
+                      >$ 69.00 USD</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="cf-subheadline">
             <div class="subheadlinr-deco-line"></div>

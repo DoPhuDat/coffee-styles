@@ -21,6 +21,10 @@
   @apply absolute top-20 z-50 w-4/5 bg-white text-center left-1/2 -translate-x-1/2 animate-in slide-in-from-top duration-700 rounded drop-shadow-lg;
 }
 
+.btn {
+  @apply top-3 right-3 w-[100px] bg-white text-gray-900 py-2 rounded px-3 z-50 font-semibold text-center;
+}
+
 .cf-top-menu-item {
   @apply cursor-pointer py-1 hover:text-gray-800 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:w-0 after:lg:bg-red-500 after:lg:h-0.5 hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300 after:lg:content-[''];
 }
@@ -47,7 +51,7 @@
 }
 
 .cf-subheadline {
-  @apply flex justify-center items-center mb-96;
+  @apply flex justify-center items-center mb-25;
 }
 
 .subheadlinr-deco-line {
@@ -55,5 +59,5 @@
 }
 
 .subheadlinr-label {
-  @apply uppercase mx-4 tracking-widest text-gray-500 font-bold text-[12px] text-center;
+  @apply uppercase mx-4 tracking-widest text-gray-500 font-bold text-xs text-center;
 }
